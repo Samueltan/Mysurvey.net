@@ -1,0 +1,132 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0044)http://localhost:8089/MySurvey/mySurvey_app/ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+id="home" lang="en" lang="en" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+	 <LINK href="static/css/css.css" rel="stylesheet" type="text/css">	 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">	 
+<META name="language" content="en">	 <LINK href="static/css/main.css" rel="stylesheet" 
+type="text/css">         
+<SCRIPT src="static/js/jquery.min.js"></SCRIPT>
+	 
+<SCRIPT src="static/js/jquery.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="static/js/jquery.yiiactiveform.js" type="text/javascript"></SCRIPT>
+ <TITLE>MySurvey</TITLE> 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17041"></HEAD>	 <!--======== LAYOUT MODEL FOR HOMEPAGE ========--> 
+    
+<BODY><!--======== PAGE ========-->         
+<DIV class="container" id="page"><!--======== HEADER ========-->                 
+<DIV id="header">
+<DIV class="makeCenter"><IMG id="appLogo" 
+src="static/img/logo-white.png"></DIV></DIV><!-- header -->				 <!--======== CONTENT: Pulls in index.php ========--> 
+                
+<DIV id="content"><!--======== SIGN IN / SIGN UP ========--> 
+<DIV id="top-half">
+<H1>Design. Collect. Analyze.</H1>
+<P>MySurvey is a web application that allows you to create, share and analyze 
+online surveys.</P>
+<DIV id="login-logout"><A class="button" id="register-link">Sign up</A>          
+       
+<P>or <A id="sign-in">Sign in</A></P></DIV><!--======== LOGIN FORM ========-->	 
+<DIV class="modal" id="login">
+<DIV class="form">
+<FORM id="login-form" action="/MySurvey/mySurvey_app/login" method="post"><!--======== Email ========--> 
+                    
+<DIV 
+class="row"><INPUT name="LoginForm[email]" id="LoginForm_email" type="text" placeholder="email" value=""> 
+                           <SPAN class="arrow-left"></SPAN>
+<DIV class="errorMessage" id="LoginForm_email_em_" 
+style="display: none;"></DIV></DIV><!--======== Password ========-->             
+        
+<DIV class="row"><INPUT name="LoginForm[password]" id="LoginForm_password" type="password" placeholder="password" value=""> 
+                           <SPAN class="arrow-left"></SPAN>
+<DIV class="errorMessage" id="LoginForm_password_em_" 
+style="display: none;"></DIV></DIV><!--======== Remember Me Check Box ========--> 
+                    
+<DIV class="row rememberMe"><INPUT name="LoginForm[rememberMe]" id="ytLoginForm_rememberMe" type="hidden" value="0"><INPUT 
+name="LoginForm[rememberMe]" id="LoginForm_rememberMe" type="checkbox" 
+value="1">                            <LABEL for="LoginForm_rememberMe">Remember 
+me next time</LABEL>                            <SPAN class="arrow-left"></SPAN>
+<DIV class="errorMessage" id="LoginForm_rememberMe_em_" 
+style="display: none;"></DIV></DIV><!--======== Sign In Button ========-->       
+              
+<DIV class="row buttons"><INPUT name="yt0" type="submit" value="Sign in">        
+            </DIV></FORM></DIV><!--======== Sign Up Button ========-->           
+  
+<P>or <A id="register-btn">Sign up</A></P></DIV><!--======== REGISTER FORM ========-->
+	 
+<DIV class="modal" id="register">
+<DIV class="form">
+<FORM id="register-form" action="/MySurvey/mySurvey_app/register" method="post"><!--======== First Name ========--> 
+                    
+<DIV class="row"><INPUT name="SurveyCreator[first_name]" id="SurveyCreator_first_name" type="text" maxlength="45" placeholder="first name" value=""> 
+                       <SPAN class="arrow-left"></SPAN>
+<DIV class="errorMessage" id="SurveyCreator_first_name_em_" style="display: none;"></DIV></DIV><!--======== Last Name ========--> 
+                    
+<DIV class="row"><INPUT name="SurveyCreator[last_name]" id="SurveyCreator_last_name" type="text" maxlength="45" placeholder="last name" value=""> 
+                       <SPAN class="arrow-left"></SPAN>
+<DIV class="errorMessage" id="SurveyCreator_last_name_em_" style="display: none;"></DIV></DIV><!--======== Email ========--> 
+                    
+<DIV 
+class="row"><INPUT name="SurveyCreator[email]" id="SurveyCreator_email" type="text" maxlength="45" placeholder="email" value=""> 
+                       <SPAN class="arrow-left"></SPAN>
+<DIV class="errorMessage" id="SurveyCreator_email_em_" 
+style="display: none;"></DIV></DIV><!--======== Password ========-->             
+        
+<DIV class="row"><INPUT name="SurveyCreator[password]" id="SurveyCreator_password" type="password" maxlength="45" placeholder="password" value=""> 
+                       <SPAN class="arrow-left"></SPAN>
+<DIV class="errorMessage" id="SurveyCreator_password_em_" 
+style="display: none;"></DIV></DIV><!--======== Retype Password ========-->      
+               
+<DIV class="row"><INPUT name="SurveyCreator[password_repeat]" id="SurveyCreator_password_repeat" type="password" placeholder="retype password" value=""> 
+                       <SPAN class="arrow-left"></SPAN>
+<DIV class="errorMessage" id="SurveyCreator_password_repeat_em_" style="display: none;"></DIV></DIV><!--======== Sign Up Button ========--> 
+                    
+<DIV class="row buttons"><INPUT name="yt1" type="submit" value="Sign up">        
+            </DIV></FORM></DIV><!--======== Sign In Button ========-->           
+  
+<P>or <A id="sign-in-btn">Sign in</A></P></DIV><!--======== LEARN MORE ========-->
+	 
+<DIV id="learn-more">
+<P><A class="learn" 
+href="http://localhost:8089/MySurvey/mySurvey_app/#about"><IMG src="static/img/down-arrow.png"></A></P></DIV></DIV><!--======== ABOUT MYSURVEY ========--> 
+<DIV id="about">
+<DIV class="center-content" id="what-it-is">
+<DIV class="image"><IMG src="static/img/create.png">	 	 </DIV>
+<DIV class="text">
+<H1>Survey creation made easy.</H1>
+<P>With a variety of question types including multiple choice, short answer and 
+more, it's easy to create online surveys from scratch using 
+MySurvey.</P></DIV></DIV>
+<DIV class="color1">
+<DIV class="center-content" id="feature-1">
+<DIV class="image"><IMG src="static/img/responses.png">		 </DIV>
+<DIV class="text">
+<H1>Collecting responses.</H1>
+<P>Gather responses with one handy URL by including your link on emails, 
+websites, Twitter, Facebook, and more.</P></DIV></DIV></DIV>
+<DIV class="center-content" id="feature-2">
+<DIV class="image"><IMG src="static/img/reports.png">		 </DIV>
+<DIV class="text">
+<H1>Analyzing results.</H1>
+<P>Gain insights with real-time charts and graphs or download a full report to 
+get the most out of your data.</P></DIV></DIV></DIV></DIV><!-- content -->				 <!--======== FOOTER ========--> 
+                
+<DIV id="footer">
+<P><A href="http://localhost:8089/MySurvey/mySurvey_app/contact">Contact 
+Us</A></P></DIV><!-- footer -->         </DIV><!-- page -->                 
+<SCRIPT src="static/js/jquery-ui.min.js"></SCRIPT>
+         
+<SCRIPT src="static/js/functions.js" type="text/javascript"></SCRIPT>
+             
+<SCRIPT type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('#login-form').yiiactiveform({'validateOnSubmit':true,'attributes':[{'id':'LoginForm_email','inputID':'LoginForm_email','errorID':'LoginForm_email_em_','model':'LoginForm','name':'email','enableAjaxValidation':true},{'id':'LoginForm_password','inputID':'LoginForm_password','errorID':'LoginForm_password_em_','model':'LoginForm','name':'password','enableAjaxValidation':true},{'id':'LoginForm_rememberMe','inputID':'LoginForm_rememberMe','errorID':'LoginForm_rememberMe_em_','model':'LoginForm','name':'rememberMe','enableAjaxValidation':true}],'errorCss':'error'});
+jQuery('#register-form').yiiactiveform({'validateOnSubmit':true,'attributes':[{'id':'SurveyCreator_first_name','inputID':'SurveyCreator_first_name','errorID':'SurveyCreator_first_name_em_','model':'SurveyCreator','name':'first_name','enableAjaxValidation':true},{'id':'SurveyCreator_last_name','inputID':'SurveyCreator_last_name','errorID':'SurveyCreator_last_name_em_','model':'SurveyCreator','name':'last_name','enableAjaxValidation':true},{'id':'SurveyCreator_email','inputID':'SurveyCreator_email','errorID':'SurveyCreator_email_em_','model':'SurveyCreator','name':'email','enableAjaxValidation':true},{'id':'SurveyCreator_password','inputID':'SurveyCreator_password','errorID':'SurveyCreator_password_em_','model':'SurveyCreator','name':'password','enableAjaxValidation':true},{'id':'SurveyCreator_password_repeat','inputID':'SurveyCreator_password_repeat','errorID':'SurveyCreator_password_repeat_em_','model':'SurveyCreator','name':'password_repeat','enableAjaxValidation':true}],'errorCss':'error'});
+});
+/*]]>*/
+</SCRIPT>
+ </BODY></HTML>

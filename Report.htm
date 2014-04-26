@@ -1,0 +1,98 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0056)http://localhost:8089/mySurvey/mySurvey_app/site/reports -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+lang="en" lang="en" xml:lang="en" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+             
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">             
+<META name="language" content="en">             <!--======== CSS FRAMEWORK ========--> 
+            <LINK href="Report_files/print.css" rel="stylesheet" type="text/css" 
+media="print">             <!--[if lt IE 8]>
+            <link rel="stylesheet" type="text/css" href="/mySurvey/mySurvey_app/static/css/ie.css" media="screen, projection" />
+            <![endif]--> 
+            <LINK href="Report_files/main.css" rel="stylesheet" type="text/css"> 
+            
+<SCRIPT src="Report_files/jquery.min.js" type="text/javascript"></SCRIPT>
+             <!--<script type="text/javascript" src="/mySurvey/mySurvey_app/static/js/jquery.min.js"></script>--> 
+                        
+<SCRIPT src="Report_files/jquery.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Report_files/highcharts.src.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Report_files/highcharts-more.src.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Report_files/exporting.src.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="Report_files/grid.js" type="text/javascript"></SCRIPT>
+ <TITLE>MySurvey - Reports Site</TITLE>     
+<META name="GENERATOR" content="MSHTML 11.00.9600.17041"></HEAD>	 <!--======== LAYOUT MODEL FOR INTERIOR PAGES ========--> 
+    
+<BODY><!--======== PAGE ========-->         
+<DIV class="container" id="page"><!--======== HEADER ========-->                 
+<DIV id="header">
+<DIV class="content-area"><A href="http://localhost:8089/mySurvey/mySurvey_app/survey">
+<DIV id="logo-container"><IMG id="headerLogo" 
+src="Report_files/logo-white.png"></DIV></A>                                 
+<DIV id="logout">                                    samueltango@gmail.com<A 
+href="http://localhost:8089/mySurvey/mySurvey_app/logout">Logout</A>             
+                    </DIV><!-- logout -->                         </DIV></DIV><!-- header -->
+								 <!--======== MENU + MAIN CONTENT AREA ========-->                 
+<DIV class="content-area"><!--======== MENU ========-->                         
+<DIV id="mainmenu">
+<UL id="yw4">
+  <LI><A 
+  href="http://localhost:8089/mySurvey/mySurvey_app/survey">Surveys</A></LI>
+  <LI class="active"><A href="http://localhost:8089/mySurvey/mySurvey_app/site/reports">Reports</A></LI>
+  <LI><A 
+  href="http://localhost:8089/mySurvey/mySurvey_app/site/settings">Account 
+  Settings</A></LI></UL></DIV><!-- mainmenu -->				 <!--======== BREADCRUMBS ========--> 
+                                        <!-- breadcrumbs -->                				 <!--======== CONTENT: Pulls in .php views from Site & Survey ========--> 
+                
+<DIV id="content">
+<SCRIPT src="Report_files/highcharts.js" type="text/javascript"></SCRIPT>
+ 
+<DIV class="stripe">
+<DIV class="page-name">
+<H1>Reports</H1>
+<P class="intro-text">Choose data source to view statistical report.</P><!-- Data source select form prototype, data should be retrieved from MySQL 
+			 This form submits selected value to the current page -->
+		 
+<FORM action="" method="POST"><SELECT name="Survey[id]" id="Survey_id" onchange="this.form.submit()"><OPTION 
+  selected="selected" value="15">survey 1</OPTION> <OPTION value="17">survey 
+  3</OPTION> <OPTION value="18">survey 2</OPTION> <OPTION value="19">survey 
+  4</OPTION> <OPTION value="20">group 8 survey test</OPTION> 
+</SELECT>		</FORM></DIV></DIV>
+<DIV class="content-width"><BR><A class="button" href="http://localhost:8089/mySurvey/mySurvey_app/survey/export/id/15">Download 
+CSV</A><A class="button" href="http://localhost:8089/mySurvey/mySurvey_app/site/reportsbar">Bar 
+Charts</A>
+<H2>question 1 in survey 1</H2><BR>
+<DIV id="yw0"></DIV>
+<H2>question 2 in survey 1</H2><BR>
+<DIV id="yw1"></DIV>
+<H2>question 3 (short answer)</H2>
+<H5>Top 10 words used in all responses. To see all the repsonses please use the 
+'Download CSV' button above.</H5>
+<DIV id="yw2"></DIV><BR>
+<H2>question 4 (T/F)</H2><BR>
+<DIV id="yw3"></DIV></DIV></DIV><!-- content -->                         </DIV><!-- content-area --> 
+       				<!--======== FOOTER ========-->                 
+<DIV id="footer">
+<P><A href="http://localhost:8089/mySurvey/mySurvey_app/contact">Contact 
+Us</A></P></DIV><!-- footer -->         </DIV><!-- page -->         
+<SCRIPT src="Report_files/jquery-ui.min.js"></SCRIPT>
+         <!--<script type="text/javascript" src="/mySurvey/mySurvey_app/static/js/jquery-ui.min.js"></script>-->
+	    
+<SCRIPT src="Report_files/functions.js" type="text/javascript"></SCRIPT>
+             
+<SCRIPT type="text/javascript">
+/*<![CDATA[*/
+jQuery(window).on('load',function() {
+var chart = new Highcharts.Chart({'chart':{'renderTo':'yw0','plotBackgroundColor':null,'plotBorderWidth':null,'plotShadow':true},'gradient':{'enabled':true},'credits':{'enabled':false},'exporting':{'enabled':true},'legend':{'enabled':false},'title':{'text':'Survey Pie Chart'},'tooltip':{'pointFormat':'{series.name}: <b>{point.percentage}%<\/b>','percentageDecimals':1},'plotOptions':{'pie':{'allowPointSelect':true,'cursor':'pointer','dataLabels':{'enabled':true,'color':'#000000','connectorColor':'#000000','formatter':function(){return '<b>'+ this.point.name +'</b>: '+ this.percentage.toFixed(2) +' %';}}}},'series':[{'type':'pie','name':'% d\'utilisation','data':[['answer a',2],['answer b',0],['answer c',0]]}]});
+var chart = new Highcharts.Chart({'chart':{'renderTo':'yw1','plotBackgroundColor':null,'plotBorderWidth':null,'plotShadow':true},'gradient':{'enabled':true},'credits':{'enabled':false},'exporting':{'enabled':true},'legend':{'enabled':false},'title':{'text':'Survey Pie Chart'},'tooltip':{'pointFormat':'{series.name}: <b>{point.percentage}%<\/b>','percentageDecimals':1},'plotOptions':{'pie':{'allowPointSelect':true,'cursor':'pointer','dataLabels':{'enabled':true,'color':'#000000','connectorColor':'#000000','formatter':function(){return '<b>'+ this.point.name +'</b>: '+ this.percentage.toFixed(2) +' %';}}}},'series':[{'type':'pie','name':'% d\'utilisation','data':[['answer x',2],['answer y',2]]}]});
+var chart = new Highcharts.Chart({'chart':{'renderTo':'yw2','type':'bar'},'credits':{'enabled':false},'title':[''],'xAxis':{'categories':[['answer'],['testtest']],'title':{'text':'Words'}},'yAxis':{'title':{'text':'Word Counter','align':'high','margin':8},'gridLineDashStyle':'longdash','tickInterval':1,'min':0,'labels':{'overflow':'justify'}},'legend':{'enabled':false},'tooltip':{'formatter':function(){return '<b>' + this.y + ' people used this word in their response</b>'}},'plotOptions':{'bar':{'groupPadding':0,'pointPadding':0.33,'dataLabels':{'enabled':true,'align':'right','color':'#FFFFFF','x':-10}},'series':{'minPointLength':2,'colorByPoint':false,'color':'#1aadce','shadow':true,'cursor':'pointer'}},'series':[{'data':[['answer',1],['testtest',1]]}],'navigation':{'buttonOptions':{'height':34,'width':42,'symbolSize':18,'symbolX':19,'symbolY':17,'symbolStrokeWidth':2}},'exporting':{'enabled':false,'filename':'MySurvey-report'}});
+var chart = new Highcharts.Chart({'chart':{'renderTo':'yw3','plotBackgroundColor':null,'plotBorderWidth':null,'plotShadow':true},'gradient':{'enabled':true},'credits':{'enabled':false},'exporting':{'enabled':true},'legend':{'enabled':false},'title':{'text':'Survey Pie Chart'},'tooltip':{'pointFormat':'{series.name}: <b>{point.percentage}%<\/b>','percentageDecimals':1},'plotOptions':{'pie':{'allowPointSelect':true,'cursor':'pointer','dataLabels':{'enabled':true,'color':'#000000','connectorColor':'#000000','formatter':function(){return '<b>'+ this.point.name +'</b>: '+ this.percentage.toFixed(2) +' %';}}}},'series':[{'type':'pie','name':'% d\'utilisation','data':[['True edited',1],['False',1]]}]});
+});
+/*]]>*/
+</SCRIPT>
+ </BODY></HTML>
